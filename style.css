@@ -1,0 +1,66 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex; /* Enables horizontal layout */
+  justify-content: center; /* Centers links horizontally */
+  align-items: center; /* Vertically aligns links */
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Card Container */
+.card-container {
+  display: flex; /* Enables Flexbox layout */
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  justify-content: center; /* Centers cards horizontally */
+  align-items: stretch; /* Makes all cards equal height */
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Individual Card */
+.card {
+  background-color: #f47474;
+  padding: 2rem;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+  }
+
+  .card {
+    width: 100%; /* Full width cards on mobile */
+  }
+}
